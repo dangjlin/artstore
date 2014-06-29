@@ -1,5 +1,7 @@
 module ApplicationHelper
-
+  def excerpt(text)
+    simple_format(truncate(auto_link(text), :length => 30) )
+  end
 
   def notice_message
     alert_types = { :notice => :success, :alert => :danger }

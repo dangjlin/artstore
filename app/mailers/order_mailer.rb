@@ -1,5 +1,6 @@
 class OrderMailer < ActionMailer::Base
-  default from: "staff@artstore.com"
+  
+  default from: "staff@sandboxf4a2e02906b64642885bec5bb348b614.mailgun.org"
 
   def notify_order_placed(order)
     

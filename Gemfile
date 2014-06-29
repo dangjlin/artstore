@@ -37,6 +37,8 @@ gem "mini_magick"
 
 gem "aasm"
 
+gem "stripe"
+
 
 group :development do 
   gem "annotate"

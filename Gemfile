@@ -39,6 +39,8 @@ gem "aasm"
 
 gem "stripe"
 
+gem "settingslogic"
+
 
 group :development do 
   gem "annotate"

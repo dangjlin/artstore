@@ -20,4 +20,9 @@ module OrdersHelper
   def render_order_state(order)
     t("orders.order_state.#{order.aasm_state}")
   end
+
+  def render_stripe_key
+    Settings.stripe.public_key
+  end
+
 end

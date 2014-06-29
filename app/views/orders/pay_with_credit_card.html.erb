@@ -1,7 +1,7 @@
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
 <script type="text/javascript">
-  Stripe.setPublishableKey('pk_test_nXJXRBje5feQ35vDRnsDMeym');
+Stripe.setPublishableKey('<%= render_stripe_key %>');
 </script>
 
 
@@ -10,6 +10,7 @@
 
   <span class="payment-errors"></span>
 
+<%= render_stripe_key %> 
   <div class="form-group">
     <div class="col-sm-3">
       <label for="Card Number">Card Number</label>

@@ -44,7 +44,8 @@ Rails.application.routes.draw do
     resources :card_charges
   end
 
-
+  get 'static_pages/index'
+  get 'static_pages/pagelogin'
   
 
   root :to => "products#index"

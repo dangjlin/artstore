@@ -1,0 +1,17 @@
+defaults: &defaults
+  stripe:
+    api_key: sk_test_PkcN1rrw4CBfVnhjksV0gltL
+    public_key: pk_test_nXJXRBje5feQ35vDRnsDMeym
+  mailgun:
+    user_name: postmaster@sandboxf4a2e02906b64642885bec5bb348b614.mailgun.org
+    password: 4uvvg2h88nd7
+
+development:
+  <<: *defaults
+  neat_setting: 800
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

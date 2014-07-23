@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
 
 	end
 
+  def PageShoppingCart
+  end
+
+
 end

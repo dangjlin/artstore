@@ -46,6 +46,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
   get 'static_pages/pagelogin'
+  get 'static_pages/pageshoppingcart'
   
 
   root :to => "products#index"

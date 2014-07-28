@@ -48,6 +48,7 @@ gem "settingslogic"
 gem "will_paginate"
 gem "ransack"
 
+gem "high_voltage"
 
 group :development do 
   gem "annotate"

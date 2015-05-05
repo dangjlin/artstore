@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tbody>
-        <% current_cart.cart_items.each do |item| %>
+        <% current_cart.cart_items.includes(:product).each do |item| %>
         <tr>
          <td><%= render_product_photo(item.product.default_photo) %></td>
 

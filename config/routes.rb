@@ -22,6 +22,9 @@ Rails.application.routes.draw do
     member do 
       post :add_to_cart
     end
+    collection do 
+      post :search
+    end
   end
 
   resources :carts do 
@@ -37,7 +40,10 @@ Rails.application.routes.draw do
     member do 
       get :pay_with_credit_card
     end
+
+    resources :card_charges
   end
+
 
   
 

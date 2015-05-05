@@ -22,12 +22,21 @@ class Order < ActiveRecord::Base
 
   scope :recent, -> { order("id DESC")}
 
+  include Tokenable
+
+  
   def build_item_cache_from_cart(cart)
-    cart.items.each do |cart_item|
+    cart.cart_items.each do |cart_item|
       item = items.build
+<<<<<<< HEAD
       item.product_name = cart_item.title
       item.quantity = cart_item.quantity
       item.price = cart_item.price
+=======
+      item.product_name = cart_item.product.title
+      item.quantity = cart_item.quantity
+      item.price = cart_item.product.price
+>>>>>>> week4_homework
       item.save
     end
   end
@@ -37,11 +46,7 @@ class Order < ActiveRecord::Base
     self.save
   end
 
-  before_create :generate_token
 
-  def generate_token
-    self.token = SecureRandom.uuid
-  end  
 
   def set_payment_with!(method)
     self.update_column(:payment_method, method)

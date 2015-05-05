@@ -31,14 +31,21 @@ gem 'spring',        group: :development
 
 
 gem "devise"
-
+gem 'cancancan'
+gem 'rails_admin'
 
 gem "bootstrap-sass"
 gem "simple_form", "3.1.0rc1"
 gem 'carrierwave'
 gem "mini_magick"
 
+gem "stripe"
+
 gem "aasm"
+
+gem "settingslogic"
+gem "will_paginate"
+gem "ransack"
 
 
 group :development do 

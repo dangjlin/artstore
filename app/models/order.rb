@@ -28,15 +28,9 @@ class Order < ActiveRecord::Base
   def build_item_cache_from_cart(cart)
     cart.cart_items.each do |cart_item|
       item = items.build
-<<<<<<< HEAD
-      item.product_name = cart_item.title
-      item.quantity = cart_item.quantity
-      item.price = cart_item.price
-=======
       item.product_name = cart_item.product.title
       item.quantity = cart_item.quantity
       item.price = cart_item.product.price
->>>>>>> week4_homework
       item.save
     end
   end

@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-
+  authorize_resource #加入這行
   before_filter :validate_search_key, :only => [:search]
 
   def index

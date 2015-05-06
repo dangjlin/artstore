@@ -11,14 +11,10 @@
  * file per style scope.
  *
  *= require_self
- *= require bootstrap
-<<<<<<< HEAD
-=======
  *= require products
->>>>>>> store-v2-solution
  */
-
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 
 .group:before, .group:after {

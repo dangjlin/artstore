@@ -20,13 +20,19 @@
 
 
 class User < ActiveRecord::Base
+  rolify
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
-
+  has_many :roles
+  belongs_to :roles
+  
+  def has_role?(name)
+    self.roles.where(name: name).length > 0
+  end 
+  
   has_many :orders
   
   def admin?

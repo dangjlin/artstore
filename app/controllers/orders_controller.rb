@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-
+  authorize_resource
   before_action :authenticate_user!
 
   def create

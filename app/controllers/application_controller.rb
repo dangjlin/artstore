@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 
-
-
   def admin_required
     current_user.admin?
   end
@@ -28,7 +26,5 @@ class ApplicationController < ActionController::Base
     session[:cart_id] = cart.id
     cart
   end
-
-
 
 end

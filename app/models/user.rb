@@ -26,8 +26,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :roles
-  belongs_to :roles
+  has_many :users_roles
+#  belongs_to :roles
   
   def has_role?(name)
     self.roles.where(name: name).length > 0

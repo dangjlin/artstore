@@ -4,20 +4,16 @@ class Ability
   def initialize(user)
     if user.blank?  
       # not logged in 如果user沒登入
-      cannot :manage, :all  ＃設置無法管理任何資源
-      basic_read_only ＃呼叫基本權限設定 Medthod 
-    elsif user.has_role?(:admin) 如果role 為 admin
+      cannot :manage, :all  # 設置無法管理任何資源
+      basic_read_only  #呼叫基本權限設定 Medthod 
+    elsif user.has_role?(:admin) # 如果role 為 admin
       # admin
       can :manage, :all #管理所有資源
-    elsif user.has_role?(:manager) 如果role 為 manager
-      can :read, Product  ＃只能讀取 Product controller 中的 show 與 index action
+    elsif user.has_role?(:manager)  # 如果role 為 manager
+      can :read, Product  # 只能讀取 Product controller 中的 show 與 index action
     end
     
-     protected
-
-      def basic_read_only
-        can :read,    Product
-      end
+    
     
     # Define abilities for the passed in user here. For example:
     #
@@ -46,4 +42,10 @@ class Ability
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
   end
+  
+   protected
+
+      def basic_read_only
+        can :read,    Product
+      end
 end

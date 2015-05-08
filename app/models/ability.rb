@@ -11,6 +11,11 @@ class Ability
       can :manage, :all #管理所有資源
     elsif user.has_role?(:manager)  # 如果role 為 manager
       can :read, Product  # 只能讀取 Product controller 中的 show 與 index action
+    elsif user.has_role?(:customer) # role = customer 
+      can :read, Product 
+      cannot :manage, Order
+      #cannot :manage, Admin::ProductsController::Product  
+      
     end
     
     

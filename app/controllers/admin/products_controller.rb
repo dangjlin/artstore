@@ -1,6 +1,6 @@
 
 class Admin::ProductsController < AdminController
-
+authorize_resource 
   def new
     @product = Product.new
     @photo = @product.photos.new

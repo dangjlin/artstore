@@ -1,5 +1,5 @@
 class Admin::OrdersController < AdminController
-
+authorize_resource :order
   before_filter :find_order, :except => [:index]
 
   def index

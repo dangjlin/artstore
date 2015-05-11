@@ -19,7 +19,8 @@ class Product < ActiveRecord::Base
   validates :title , :presence => true
   validates :quantity , :presence => true
 
-
+  resourcify
+  
   def default_photo
     photos.first
   end

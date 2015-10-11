@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_date1: 2015-10-11
+  check_date2: MyString
+  check_type: MyString
+  doc_name: MyString
+  patient_no_string: MyString
+  patient_no_only: 1
+  time_slot: MyString
+  room_no: MyString
+
+two:
+  check_date1: 2015-10-11
+  check_date2: MyString
+  check_type: MyString
+  doc_name: MyString
+  patient_no_string: MyString
+  patient_no_only: 1
+  time_slot: MyString
+  room_no: MyString

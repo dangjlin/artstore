@@ -34,7 +34,7 @@ gem 'rolify'
 
 gem "bootstrap-sass"
 
-gem "simple_form", "3.1.0rc1"
+gem "simple_form"
 gem 'carrierwave'
 gem "mini_magick"
 
@@ -46,12 +46,21 @@ gem "settingslogic"
 gem "will_paginate"
 gem "ransack"
 
+# use web crawler nokogiri  and mechanize 
+gem 'nokogiri'
+gem 'mechanize'
+
+#cronjob 
+gem 'whenever'
+
 
 group :development do 
   gem "annotate"
   gem "letter_opener"
 #  gem 'roadie'
 end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

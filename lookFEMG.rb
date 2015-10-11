@@ -1,8 +1,20 @@
 		require 'rubygems'
 		require 'nokogiri'
 		require 'mechanize'
+		require 'active_record'
 
 		agent = Mechanize.new
+
+ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
+ActiveRecord::Base.establish_connection(
+  :adapter  => 'sqlite3',
+  :database => 'db/development.sqlite3'
+)
+
+class Consult < ActiveRecord::Base
+
+end		
+		
 		
 def print_data(page_html)
 	  patient_numbers_string = page_html.xpath("//*[@id=\"ctl00_FunctionContent_ctl00_Label2\"]").children.children.to_s.strip
@@ -23,10 +35,37 @@ def print_data(page_html)
 	  puts time_slot
 	  puts room_no
 	  
+	  
+	  
 	  records = "#{check_date},#{check_type},#{doc_name},#{patient_numbers_string},#{patient_numbers_only},#{time_slot},#{room_no}\n"
 	  if records != ",,,,,,\n"
 	  File.open('look_result_October', 'a') { |file| file.write("#{records}") }
-	  end 
+
+	  check_date_temp = check_date.split("/") 
+	  check_date1 = check_date_temp[0]+"-"+check_date_temp[1]+"-"+check_date_temp[2]
+
+	  
+	  # write database 
+	  
+	  puts " writing database "
+		consult = Consult.new
+	    consult.check_date1 = check_date1
+	    consult.check_date2 = check_date
+	    consult.check_type  = check_type
+	    consult.doc_name = doc_name
+	    consult.patient_no_string = patient_numbers_string
+	    consult.patient_no_only = patient_numbers_only
+	    consult.time_slot = time_slot
+	    consult.room_no = room_no
+	    consult.save
+	  
+	  puts "write OK"  
+	    
+	  end
+	  
+	  
+	  
+	  
 end		
 	
 def get_room(lookup_department_url)
@@ -208,5 +247,11 @@ end
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
 	    print_data(parse_html3)
     end     
-   
-    
+
+
+class Product < ActiveRecord::Base
+
+
+
+
+end

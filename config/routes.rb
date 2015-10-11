@@ -17,6 +17,12 @@ Rails.application.routes.draw do
   namespace :account do 
     resources :orders
   end
+  
+  
+  namespace :FEMH do
+    resources :consults
+  end
+  
 
   resources :products do 
     member do 

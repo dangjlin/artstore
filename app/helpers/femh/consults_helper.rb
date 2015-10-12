@@ -1,0 +1,2 @@
+module Femh::ConsultsHelper
+end

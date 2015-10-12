@@ -19,8 +19,9 @@ Rails.application.routes.draw do
   end
   
   
-  namespace :FEMH do
+  namespace :femh do
     resources :consults
+    get 'month/:id', to: 'consults#show'
   end
   
 

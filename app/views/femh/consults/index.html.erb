@@ -1,0 +1,29 @@
+
+<h2>門診查詢總表</h2>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>門診日期</th>
+      <th>門診科別</th>
+      <th>醫師名稱</th>
+      <th>看診人數</th>
+      <th>診別時段</th>
+      <th>診間號碼</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @consults.each_with_index do |consult,index| %>
+    <tr>
+      <td> <%= index+1 %> </td>
+      <td> <%= consult.check_date2 %> </td>
+      <td> <%= consult.check_type %> </td>
+      <td> <%= consult.doc_name %></td>
+      <td> <%= consult.patient_no_only %> </td>
+      <td> <%= consult.time_slot %> </td>
+      <td> <%= consult.room_no %> </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -141,6 +141,34 @@ end
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
 	    print_data(parse_html3)
     end     
+
+
+#cs 
+
+	puts "====CS上午診===="
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=1")
+	@cv_room.each do |room|
+		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0406&chop0clmdocid=92013&chregdate=#{today_date}&chregroom=#{room}")
+		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
+        print_data(parse_html)
+    end 
+
+    puts "====CS下午診===="
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=2")
+    @cv_room.each do |room|
+		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0406&chop0clmdocid=87919&chregdate=#{today_date}&chregroom=#{room}")
+		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
+	    print_data(parse_html2)
+    end 
+    
+    puts "====CS晚上診===="
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=3")
+    @cv_room.each do |room|
+		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0406&chop0clmdocid=87919&chregdate=#{today_date}&chregroom=#{room}")
+		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
+	    print_data(parse_html3)
+    end     
+
   
 
 #meta 
@@ -248,10 +276,3 @@ end
 	    print_data(parse_html3)
     end     
 
-
-class Product < ActiveRecord::Base
-
-
-
-
-end

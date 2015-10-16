@@ -16,6 +16,8 @@
       <th>門診科別</th>
       <th>醫師名稱</th>
       <th>看診人數</th>
+      <th>整月總診數</th>
+      <th>平均每診人數</th>
     </tr>
   </thead>
   <tbody>
@@ -26,6 +28,8 @@
       <td> <%= consult[0][0] %> </td>
       <td> <%= consult[0][1] %></td>
       <td> <%= consult[1] %> </td>
+      <td> <%= render_count_open_total(consult)  %> </td>
+      <td> <%= render_count_average_patient(consult)  %> </td>
    </tr>
     <% end %>
   </tbody>

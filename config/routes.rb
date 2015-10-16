@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   
   namespace :femh do
     resources :consults
-    get 'month/:id', to: 'consults#show'
+    get ':id', to: 'consults#show'
   end
   
 

@@ -27,7 +27,7 @@ def write_data_volume(input)
       
       puts "\n"
       puts @records
-		  File.open('tw_futre_volume', 'a') { |file| file.write("#{@records}\n") }
+		  File.open('tw_future_quotere_volume', 'a') { |file| file.write("#{@records}\n") }
 	
 		  # write database 
 		  

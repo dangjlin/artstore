@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151011064528) do
+ActiveRecord::Schema.define(version: 20151022092359) do
 
   create_table "cart_items", force: true do |t|
     t.integer  "cart_id"
@@ -35,6 +35,27 @@ ActiveRecord::Schema.define(version: 20151011064528) do
     t.integer  "patient_no_only"
     t.string   "time_slot"
     t.string   "room_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "futurequotes", force: true do |t|
+    t.date     "check_date"
+    t.string   "commodity_type"
+    t.float    "open_price"
+    t.float    "highest_price"
+    t.float    "lowest_price"
+    t.float    "close_price"
+    t.float    "volume"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "futurevolumes", force: true do |t|
+    t.date     "check_date"
+    t.string   "commodity_type"
+    t.integer  "foreign_unsettle_volume"
+    t.integer  "total_unsettle_volume"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_date: 
+  commodity_type: 
+  foreign_unsettle_volume: 
+  total_unsettle_volume: 1
+
+two:
+  check_date: 
+  commodity_type: 
+  foreign_unsettle_volume: 
+  total_unsettle_volume: 1

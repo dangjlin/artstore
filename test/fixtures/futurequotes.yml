@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_date: 2015-10-22
+  commodity_type: MyString
+  open_price: 1.5
+  highest_price: 1.5
+  lowest_price_spot: 1.5
+  close_price_spot: 1.5
+  volume: 1.5
+
+two:
+  check_date: 2015-10-22
+  commodity_type: MyString
+  open_price: 1.5
+  highest_price: 1.5
+  lowest_price_spot: 1.5
+  close_price_spot: 1.5
+  volume: 1.5

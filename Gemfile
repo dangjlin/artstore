@@ -29,7 +29,6 @@ gem 'spring',        group: :development
 
 gem "devise"
 gem 'cancancan'
-#gem 'rails_admin'
 gem 'rolify'
 
 gem "bootstrap-sass"

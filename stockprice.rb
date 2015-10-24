@@ -27,7 +27,7 @@ def write_data_volume(input)
       
       puts "\n"
       puts @records
-		  File.open('tw_future_quotere_volume', 'a') { |file| file.write("#{@records}\n") }
+		  File.open('tw_future_volume', 'a') { |file| file.write("#{@records}\n") }
 	
 		  # write database 
 		  
@@ -36,8 +36,8 @@ def write_data_volume(input)
      		volume = Futurevolume.new
 		    volume.check_date = input[0]
 		    volume.commodity_type  = input[1]
-		    volume.total_unsettle_volume = input[2]
-		    volume.foreign_unsettle_volume = input[3]
+		    volume.foreign_unsettle_volume = input[2]
+		    volume.total_unsettle_volume = input[3]
 		    volume.save
 		  
 		  puts "write OK"  
@@ -75,7 +75,7 @@ def price_quote(input)
 end
 
 
-	puts "====大台期的外資未平倉量===="
+
 		page = agent.get("https://tw.screener.finance.yahoo.net/future/aa04?page=future")
 		page_html = Nokogiri::HTML.parse(page.parser.to_html)
 		
@@ -84,6 +84,10 @@ end
 		check_date_raw = page_html.xpath("//*[@id='future-ten-number']/p[1]/em").children.to_s
 		check_date_temp = check_date_raw[0,10].split("/") 
 		check_date = check_date_temp[0]+"-"+check_date_temp[1]+"-"+check_date_temp[2]
+		
+	if check_date_temp[2] == Date.today.mday	
+
+	puts "====大台期的外資未平倉量===="		
 		printdata << check_date
 
 	    commodity_type = page_html.xpath("//*[@id='future-ten-number']/table[1]/thead/tr[1]/td[2]").children.to_s
@@ -95,7 +99,7 @@ end
 		total_unsettle_volume =page_html.xpath("//*[@id='future-ten-number']/table[1]/tbody/tr[4]/td[4]").children.to_s.to_i
 		printdata << total_unsettle_volume
 
-#		write_data_volume(printdata)
+		write_data_volume(printdata)
 		
 
 	puts "====台股現貨,大台期,小台期,的開高收低===="
@@ -156,15 +160,14 @@ end
 	      volume_minitx = page_html2.xpath("//*[@id='ext-wrap']/table[2]/tbody/tr[11]/td[13]").children.to_s.to_f
 	      quotedata << volume_minitx
 	      
-	      price_quote(quotedata)
+     	  price_quote(quotedata)
 	      
-
-
-
+	else
 		
-
-	 
- 
+		File.open('tw_future_volume', 'a') { |file| file.write("#{Date.today} 未開盤\n") }
+		File.open('tw_future_quote', 'a') { |file| file.write("#{Date.today} 未開盤\n") }
+	
+	end  
  
    
    

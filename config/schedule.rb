@@ -12,9 +12,12 @@
       rake "FEMG:get_FEMG_data"
   end
   
-  every 1.day, :at => '10:00 am' do
+  every 1.day, :at => '01:00 pm' do
       rake "FEMG:get_quote_data"
   end
+
+# after alter this file , please use "whenever -w " to write to crontab file
+
 
 # Example:
 #

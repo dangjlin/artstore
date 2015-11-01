@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @consults.each_with_index do |consult,index| %>
+    <% @consults_detail.each_with_index do |consult,index| %>
     <tr>
       <td> <%= index+1 %> </td>
       <td> <%= consult.check_date2 %> </td>
@@ -25,6 +25,5 @@
       <td> <%= consult.room_no %> </td>
     </tr>
     <% end %>
-
   </tbody>
 </table>

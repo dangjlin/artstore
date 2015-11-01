@@ -4,10 +4,12 @@ class Femh::ConsultsController < AdminController
     layout "femh"
     
     def index
-     @consults = Consult.paginate(:page => params[:page], :per_page => 50).order("check_date1 DESC")
+   #  @consults = Consult.paginate(:page => params[:page], :per_page => 50).order("check_date1 DESC")
+      @consults = Consult.order("check_date1 DESC")
      
     end
     
+ 
     
     def show
         

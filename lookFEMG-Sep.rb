@@ -104,11 +104,11 @@ end
 		fm_room = ["F107", "F108", "F109", "F111"]
 		
 		
-		#year_month = "10409"
-	    #month_day = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+		year_month = "10408"
+	    month_day = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
 		
-		year_month = "10410"
-		month_day = ["14"]
+	#	year_month = "10410"
+	#	month_day = ["29"]
 		
 		lookup_date = []
 		
@@ -131,7 +131,7 @@ lookup_date.each do |sep_date|
    
 #cv    
 	puts "====CV上午診===="
-#	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=1")
 	cv_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0401&chop0clmdocid=83095&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -139,7 +139,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====CV下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=2")
     cv_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0401&chop0clmdocid=67116&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -147,7 +147,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====CV晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0401&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%85%A7%E7%A7%91&chOp0Time=3")
     cv_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0401&chop0clmdocid=89754&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
@@ -156,7 +156,7 @@ lookup_date.each do |sep_date|
    
 #cs 
 	puts "====CS上午診===="
-#	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=1")
 	cv_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0406&chop0clmdocid=92013&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -164,7 +164,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====CS下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=2")
     cv_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0406&chop0clmdocid=87919&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -172,7 +172,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====CS晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0406&SecName=%E5%BF%83%E8%87%9F%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91&chOp0Time=3")
     cv_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0406&chop0clmdocid=87919&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
@@ -183,7 +183,7 @@ lookup_date.each do |sep_date|
 #meta 
     
 	puts "====Meta 上午診===="
-	#get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=1")
 	meta_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0203&chop0clmdocid=42522&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -191,7 +191,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====Meta 下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=2")
     meta_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0203&chop0clmdocid=61003&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -199,7 +199,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====Meta 晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0203&SecName=%E6%96%B0%E9%99%B3%E4%BB%A3%E8%AC%9D%E7%A7%91&chOp0Time=3")
     meta_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0203&chop0clmdocid=54570&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
@@ -210,7 +210,7 @@ lookup_date.each do |sep_date|
 #neuro 
 
 	puts "====Neuro 上午診===="
-	#get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=1")
 	neuro_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0206&chop0clmdocid=00627&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -218,7 +218,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====Neuro 下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=2")
     neuro_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0206&chop0clmdocid=89828&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -226,7 +226,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====Neuro 晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0206&SecName=%E7%A5%9E%E7%B6%93%E5%85%A7%E7%A7%91&chOp0Time=3")
     neuro_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0206&chop0clmdocid=89828&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
@@ -236,7 +236,7 @@ lookup_date.each do |sep_date|
 #Family Hospital 
 
 	puts "====Family 上午診===="
-	#get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=1")
 	fm_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0292&chop0clmdocid=89827&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -244,7 +244,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====Family 下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=2")
     fm_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0292&chop0clmdocid=91241&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -252,7 +252,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====Family 晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0292&SecName=%E5%AE%B6%E5%BA%AD%E9%86%AB%E5%AD%B8%E7%A7%91&chOp0Time=3")
     fm_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0292&chop0clmdocid=90431&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)
@@ -262,7 +262,7 @@ lookup_date.each do |sep_date|
 #Nephrology
 
 	puts "====Nephrology 上午診===="
-	#get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=1")
+	get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=1")
 	kn_room.each do |room|
 		page = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=1&secno=0205&chop0clmdocid=61636&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html = Nokogiri::HTML.parse(page.parser.to_html)
@@ -270,7 +270,7 @@ lookup_date.each do |sep_date|
     end 
 
     puts "====Nephrology 下午診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=2")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=2")
     kn_room.each do |room|
 		page2 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=2&secno=0205&chop0clmdocid=61636&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html2 = Nokogiri::HTML.parse(page2.parser.to_html)
@@ -278,7 +278,7 @@ lookup_date.each do |sep_date|
     end 
     
     puts "====Nephrology 晚上診===="
-    #get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=3")
+    get_room("http://www.femh.org.tw/visit/visit.aspx?Action=9_1&MenuType=0&secno=0205&SecName=%E8%85%8E%E8%87%9F%E5%85%A7%E7%A7%91&chOp0Time=3")
     kn_room.each do |room|
 		page3 = agent.get("http://www.femh.org.tw/visit/visit.aspx?Action=9_2&MenuType=0&chOp0Time=3&secno=0205&chop0clmdocid=89745&chregdate=#{today_date}&chregroom=#{room}")
 		parse_html3 = Nokogiri::HTML.parse(page3.parser.to_html)

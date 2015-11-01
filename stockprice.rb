@@ -19,7 +19,7 @@ end
 		
 		
 def write_data_volume(input)
-
+    @records = ""
       input.each do |item|
       	puts item
        	@records = "#{@records}"+ item.to_s + ","
@@ -40,11 +40,12 @@ def write_data_volume(input)
 		    volume.total_unsettle_volume = input[3]
 		    volume.save
 		  
-		  puts "write OK"  
+		  puts "write OK"
+		  @records = ""
 end		
 	
 def price_quote(input)
-	
+	 @records = ""
       input.each do |item|
       	puts item
        	@records = "#{@records}"+ item.to_s + ","
@@ -85,7 +86,7 @@ end
 		check_date_temp = check_date_raw[0,10].split("/") 
 		check_date = check_date_temp[0]+"-"+check_date_temp[1]+"-"+check_date_temp[2]
 		
-	if check_date_temp[2] == Date.today.mday	
+	if check_date_temp[2] == Date.today.mday.to_s
 
 	puts "====大台期的外資未平倉量===="		
 		printdata << check_date

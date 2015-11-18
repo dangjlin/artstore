@@ -1,5 +1,5 @@
 # Change these
-server '159.203.240.122', port: 80, roles: [:web, :app, :db], primary: true
+server '159.203.240.122', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:dangjlin/artstore.git'
 set :application,     'artstore'

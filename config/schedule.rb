@@ -12,7 +12,7 @@
       rake "FEMG:get_FEMG_data"
   end
   
-  every 1.day, :at => '01:00 pm' do
+  every 1.day, :at => '00:05 am' do
       rake "FEMG:get_quote_data"
   end
 

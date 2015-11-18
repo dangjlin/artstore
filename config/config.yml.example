@@ -1,10 +1,10 @@
 defaults: &defaults
   app_name: "ArtStore"
     stripe:
-      secret_key: 
-      publishable_key: 
+      secret_key: "" 
+      publishable_key: "" 
     mailgun:
-      username: 
+      username: ""
       password: 
 development:
   <<: *defaults
@@ -14,4 +14,3 @@ test:
 
 production:
   <<: *defaults
-  

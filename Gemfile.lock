@@ -138,6 +138,7 @@ GEM
       mini_portile (~> 0.6.0)
     ntlm-http (0.1.1)
     orm_adapter (0.5.0)
+    pg (0.18.4)
     polyamorous (1.2.0)
       activerecord (>= 3.0)
     puma (2.15.3)
@@ -257,6 +258,7 @@ DEPENDENCIES
   mechanize
   mini_magick
   nokogiri
+  pg
   puma
   rails (= 4.2.5)
   ransack

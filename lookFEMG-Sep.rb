@@ -7,8 +7,10 @@
 		
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
-  :adapter  => 'sqlite3',
-  :database => 'db/development.sqlite3'
+  :adapter  => 'postgresql',
+  :username => 'pguser'
+  :password => '7ujm8ik,'
+  :database => 'ddcfd3vgulumtn'
 )
 
 class Consult < ActiveRecord::Base
@@ -104,11 +106,11 @@ end
 		fm_room = ["F107", "F108", "F109", "F111"]
 		
 		
-	#	year_month = "10408"
-	 #   month_day = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+		year_month = "10410"
+	  	month_day = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
 		
-		year_month = "10411"
-		month_day = ["17"]
+	#	year_month = "10410"
+	#	month_day = ["17"]
 	
 		lookup_date = []
 		

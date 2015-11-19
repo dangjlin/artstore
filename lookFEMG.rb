@@ -7,9 +7,13 @@
 
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
-  :adapter  => 'sqlite3',
-  :database => 'db/development.sqlite3'
+  :adapter  => 'postgresql',
+  :username => 'pguser'
+  :password => '7ujm8ik,'
+  :database => 'ddcfd3vgulumtn'
+
 )
+
 
 class Consult < ActiveRecord::Base
 

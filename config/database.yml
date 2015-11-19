@@ -22,7 +22,9 @@ test:
 
 production:
   adapter: postgresql
+  database: ArtStore_production
   host: localhost
   username: pguser
   password: 9ol.0p;/
   encoding: unicode
+  pool: 5

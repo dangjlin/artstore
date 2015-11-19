@@ -52,7 +52,12 @@ gem 'mechanize'
 #cronjob 
 gem 'whenever'
 
+#app server 
 gem 'puma'
+
+# environment variable 
+gem 'dotenv-rails', :groups => [:development, :test, :production]
+
 
 group :development do 
   gem "annotate"

@@ -16,6 +16,7 @@
 /tmp
 .DS_Store
 public/uploads
+.env.local
 #config/config.yml
 look_result_October
 tw_future_quote

@@ -8,9 +8,9 @@
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
   :adapter  => 'postgresql',
-  :username => 'pguser',
-  :password => '7ujm8ik,',
-  :host => 'localhost',
+  :username => 'kyuztttdlmmaxy',
+  :password => 'k8J8JB59pudPp7r4cFB6uhdzLF',
+  :host => 'ec2-54-83-53-120.compute-1.amazonaws.com',
   :database => 'ddcfd3vgulumtn'
 )
 

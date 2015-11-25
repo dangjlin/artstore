@@ -8,8 +8,8 @@
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
   :adapter  => 'postgresql',
-  :username => 'kyuztttdlmmaxy',
-  :password => 'k8J8JB59pudPp7r4cFB6uhdzLF',
+  :username => ENV['DATABASE_USER'],
+  :password => ENV['DATABASE_PASS'],
   :host => 'ec2-54-83-53-120.compute-1.amazonaws.com',
   :database => 'ddcfd3vgulumtn'
 )
@@ -108,7 +108,7 @@ end
 		
 		
 		year_month = "10411"
-	  	month_day = ["18", "19"]		
+	  	month_day = ["24"]		
 	#	year_month = "10410"
 	#	month_day = ["17"]
 	

@@ -13,7 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20151022092359) do
 
-  create_table "cart_items", force: true do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
     t.integer  "product_id"
     t.datetime "created_at"
@@ -21,12 +24,12 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.integer  "quantity",   default: 1
   end
 
-  create_table "carts", force: true do |t|
+  create_table "carts", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "consults", force: true do |t|
+  create_table "consults", force: :cascade do |t|
     t.date     "check_date1"
     t.string   "check_date2"
     t.string   "check_type"
@@ -39,7 +42,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  create_table "futurequotes", force: true do |t|
+  create_table "futurequotes", force: :cascade do |t|
     t.date     "check_date"
     t.string   "commodity_type"
     t.float    "open_price"
@@ -51,7 +54,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  create_table "futurevolumes", force: true do |t|
+  create_table "futurevolumes", force: :cascade do |t|
     t.date     "check_date"
     t.string   "commodity_type"
     t.integer  "foreign_unsettle_volume"
@@ -60,7 +63,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  create_table "order_infos", force: true do |t|
+  create_table "order_infos", force: :cascade do |t|
     t.integer  "order_id"
     t.string   "billing_name"
     t.string   "billing_address"
@@ -70,7 +73,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  create_table "order_items", force: true do |t|
+  create_table "order_items", force: :cascade do |t|
     t.string   "product_name"
     t.float    "price"
     t.integer  "quantity"
@@ -79,7 +82,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  create_table "orders", force: true do |t|
+  create_table "orders", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "total",          default: 0
     t.boolean  "paid",           default: false
@@ -90,17 +93,17 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.string   "aasm_state",     default: "order_placed"
   end
 
-  add_index "orders", ["aasm_state"], name: "index_orders_on_aasm_state"
-  add_index "orders", ["token"], name: "index_orders_on_token"
+  add_index "orders", ["aasm_state"], name: "index_orders_on_aasm_state", using: :btree
+  add_index "orders", ["token"], name: "index_orders_on_token", using: :btree
 
-  create_table "photos", force: true do |t|
+  create_table "photos", force: :cascade do |t|
     t.integer  "product_id"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "products", force: true do |t|
+  create_table "products", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.integer  "quantity",    default: 0
@@ -109,7 +112,7 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.float    "price",       default: 0.0
   end
 
-  create_table "roles", force: true do |t|
+  create_table "roles", force: :cascade do |t|
     t.string   "name"
     t.integer  "resource_id"
     t.string   "resource_type"
@@ -117,10 +120,10 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.datetime "updated_at"
   end
 
-  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
-  add_index "roles", ["name"], name: "index_roles_on_name"
+  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
+  add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
@@ -136,14 +139,14 @@ ActiveRecord::Schema.define(version: 20151022092359) do
     t.boolean  "is_admin",               default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "users_roles", id: false, force: true do |t|
+  create_table "users_roles", id: false, force: :cascade do |t|
     t.integer "user_id"
     t.integer "role_id"
   end
 
-  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
+  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
 end

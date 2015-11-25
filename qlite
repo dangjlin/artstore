@@ -1,0 +1,735 @@
+[33mcommit b59b1d9287982c07506c46be21ee58bb3837777a[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Fri Nov 20 03:19:41 2015 -0500
+
+    modify november date
+
+[33mcommit 71eafc23398047673f7f9f2865fb4ee52e47cd57[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Fri Nov 20 00:42:34 2015 -0500
+
+    modify controller show action date problem
+
+[33mcommit 751679f634e6f1cae6be8632d112d599c56c8dfb[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 23:06:08 2015 -0500
+
+    change rake task file
+
+[33mcommit 587f3cf35b77aa593d80f9f5dee6026d0efb4e9d[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 22:59:21 2015 -0500
+
+    duplicate lookFEMG different month
+
+[33mcommit e244343ec14cdd59d84aeff534ee3779c994bd17[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 21:57:14 2015 -0500
+
+     modify lookFEMG
+
+[33mcommit e7acae2a48003056972604669d6a2801e705f005[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 21:49:14 2015 -0500
+
+    fix database yml
+
+[33mcommit f98b41c4c6ae5c99eac567ffa6d3640440145944[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 13:35:45 2015 -0500
+
+     fix lookFEMG file add host
+
+[33mcommit eae8fbc934785bf2904c37c608bf6f2d2cec393d[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 13:15:28 2015 -0500
+
+    fix lookFEMG files
+
+[33mcommit 7e21416741cd7788784887e5c8e8a68a01441a7f[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 12:53:59 2015 -0500
+
+    modify rake task name
+
+[33mcommit 1c5074a1d2d15c13a0ec0a1e005d19aa2da7ae9e[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 12:50:07 2015 -0500
+
+     modify db connection
+
+[33mcommit 58cab83d8fcb846e0412e3c7a06bf7fd8d5b9f8c[m
+Author: Daniel <yettie.lin@gmail.com>
+Date:   Thu Nov 19 12:03:44 2015 -0500
+
+    modify gemfile.lock
+
+[33mcommit 5f7e3e5d616bd120ba6e69daa3e0452c7aa14a8a[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 16:24:42 2015 +0000
+
+    sqlite3 removed to development
+
+[33mcommit 04591148af24d84129a980f74e81467257f0bbb0[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 15:58:13 2015 +0000
+
+    commiting Gemfile.lock
+
+[33mcommit 67b1f78bf30e3aceabec1fd2b0b5598c84a4f89e[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 13:37:17 2015 +0000
+
+    Added rails_12factor gem and updated Gemfile.lock
+
+[33mcommit 8865d8785f6399f36f0e5195d21379cf3bbe503a[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 12:57:07 2015 +0000
+
+    remove database.yml
+
+[33mcommit 97e68e720e3d8b47161ed70632902a717238da35[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 12:33:11 2015 +0000
+
+     gem file
+
+[33mcommit 4e3c995ceb94531f71175e1df5cd82a32e10547c[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 09:52:05 2015 +0000
+
+    remove production environment key base
+
+[33mcommit 4547c1530feb2034941b93e64f659eb8d380c4d6[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 08:44:30 2015 +0000
+
+    modify config production
+
+[33mcommit dfa1438c8f4ee6c595e0f889aa479f501eca2a52[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 08:01:15 2015 +0000
+
+    add dotenv-rails gem
+
+[33mcommit 77e24b0d60e0b725e1f60ed2325cf5b162597894[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 03:35:09 2015 +0000
+
+     modify secret.yml
+
+[33mcommit 347bebae8460eff46be5b0f24641fe5f18301280[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 02:49:09 2015 +0000
+
+    fix order _controller
+
+[33mcommit b68536a12f483d0c685088b032a5bc4eb51829a4[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 01:39:24 2015 +0000
+
+    modify database.yml
+
+[33mcommit 42f127d9a15706d8a99f933d94e641e32305e540[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Nov 19 01:24:03 2015 +0000
+
+    modifyied config devise key
+
+[33mcommit 674a177eeefe018e1ef574677389fce8aa6e6e1e[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 23:53:08 2015 +0000
+
+     modify devise key
+
+[33mcommit 5b0ae4732da5e07fd91d5b0c14832e2d800152d7[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 15:40:34 2015 +0000
+
+     modify devise key
+
+[33mcommit 10693835a50c13949a99feaf69ce21f466a30b98[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 15:25:47 2015 +0000
+
+    fix config.yml file by add two spaces
+
+[33mcommit a8f4481275e6e75212498f9b075df9547aee912d[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 15:14:49 2015 +0000
+
+    get back config.yml
+
+[33mcommit fce8eef3eb4fdb1fed9ad9dfaf2359a7ecbcfb70[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 15:12:39 2015 +0000
+
+    test remove config .yaml
+
+[33mcommit 246b8935c0bbecc68cc8e665ce792e33f5b966ff[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 15:10:37 2015 +0000
+
+     fix database.yml file
+
+[33mcommit a6c460a7e74c923ae9bbec0cd6afeedcaf289ec9[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 11:16:29 2015 +0000
+
+    fix config.yml space
+
+[33mcommit fd0284f7b80821b74b9e7f49353f285ec395c39b[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 10:51:23 2015 +0000
+
+    change production config file config.serve_static_file
+
+[33mcommit 3f2ffdd857bc140dee96f894f55523b200819afd[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 10:46:23 2015 +0000
+
+    add config.yml
+
+[33mcommit 4454206fce05d9415abda938b04deaa2e52ffdbb[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 08:08:43 2015 +0000
+
+     update gemfile.lock
+
+[33mcommit cd54c23a1eced82e05affc3cb63f9a581bb9d611[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 07:53:23 2015 +0000
+
+     fix deployrb port number
+
+[33mcommit f5c95406be424998dd4275ccbb700da5b487c439[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 07:31:14 2015 +0000
+
+     fix database.yml and gem file
+
+[33mcommit a8fd421873fe6752f6d8846f18f3c6bb021bcc84[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 06:52:50 2015 +0000
+
+    Set up Puma, Nginx & Capistrano
+
+[33mcommit e54c8b0b45185e7b0502eb35f2ae9c72af0becb3[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 06:26:20 2015 +0000
+
+    modified gemfile to rails 4.2.5 , and add capastrino
+
+[33mcommit 37b37178378aa0a7a3d1206773c0acfa29ea36a4[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Wed Nov 18 05:27:59 2015 +0000
+
+    up to date 20161118
+
+[33mcommit 2ad42cc14521848e3311e798a3c573bcf3ac3a49[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Sun Nov 1 13:57:11 2015 +0000
+
+    modifly nav bar plus July, August and change index to show all without paginate
+
+[33mcommit 6eb4a125c14ecbf77a64beaf28e5c7821ff48433[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Sat Oct 24 05:36:41 2015 +0000
+
+     fix holiday get data problem
+
+[33mcommit 500049b3d76d1de8d22ae99e690bf859fde1c3c0[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Oct 22 10:32:16 2015 +0000
+
+     remove future records
+
+[33mcommit 6cb77bf789980816813b819cf75c5ce51c1084a6[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Oct 22 10:14:34 2015 +0000
+
+     add get future quote data function
+
+[33mcommit 5607002572c0ef4d33a5d33c441b2f4edc82d92d[m
+Merge: bcfcee5 4ae8a66
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Oct 22 03:32:43 2015 +0000
+
+    Merge branch 'FEMH' of github.com:dangjlin/artstore into FEMH
+
+[33mcommit bcfcee533808a6cc685c85c9bc63e9a907123547[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Oct 22 03:28:46 2015 +0000
+
+     add consult index page paginate function and start develop stock quote query
+
+[33mcommit 4ae8a66ae06dd1b5db59f0c9ea1b81c451b88fbb[m
+Author: Daniel (Guo-Jheng) Lin <yettie.lin@gmail.com>
+Date:   Fri Oct 16 15:32:55 2015 +0800
+
+    Delete look_result_October
+
+[33mcommit 6aaa7c86748e42defe551bf1054b4367db7050fe[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Fri Oct 16 07:31:56 2015 +0000
+
+     remove lookup_result file
+
+[33mcommit 5a4c40698f4cbab4cf097ebbfd43e1be861cb1e3[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Fri Oct 16 07:14:06 2015 +0000
+
+    add role function and count time_slot and average calculation
+
+[33mcommit 2afd7eeca61d2c76fcd4d93e3884346a2882cda8[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Mon Oct 12 09:29:25 2015 +0000
+
+     add cs department
+
+[33mcommit 6dd6a5c9eccea60a837f40e32c77c14cb4dbe66b[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Mon Oct 12 03:41:38 2015 +0000
+
+     add lookup result from website , add controller , route and view
+
+[33mcommit e5e4558e2d7b81658a17d4350e9f7033da7c9562[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Sun Oct 11 16:02:20 2015 +0000
+
+    add write to db using by active_records
+
+[33mcommit e3df5e21f59f7c1d401e0bf9652cbd85d9e45a15[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Sun Oct 11 08:08:48 2015 +0000
+
+    add FEMH lookup function
+
+[33mcommit b8a5f1362be3d193771bd5ad7471c6827ecf223e[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Mon May 11 12:01:52 2015 +0000
+
+     modify product model
+
+[33mcommit 68643e583410211e779d36235db8494c90b39d09[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Fri May 8 03:29:39 2015 +0000
+
+    complete rolify add role function
+
+[33mcommit a340f21ae07a23ee53de1fc68146f65bc7a46f24[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu May 7 02:13:58 2015 +0000
+
+     add cancancan and rolify success
+
+[33mcommit 5e6f5ab5ca84c5cb8264a6d18a85982d9f3feb2a[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Wed May 6 02:50:02 2015 +0000
+
+     processing cancancan rolify
+
+[33mcommit c6fa5ca2f7259c70760e5d83f8ba491ac447caaa[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Tue May 5 09:21:45 2015 +0000
+
+    fix all conflict
+
+[33mcommit 005da1b159623eac052b2592e2658096e5bff4d3[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Tue May 5 09:16:55 2015 +0000
+
+    fix conflit of gemfile.lock
+
+[33mcommit 73f05c7543082ff7dbec10ebc9e11152164ed8fb[m
+Merge: 972e7e9 b5314c7
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Tue May 5 07:42:20 2015 +0000
+
+     conflict gemfile , order controller , order model
+
+[33mcommit b5314c7760316a0964dc1f21ddfc5827cd101685[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Tue May 5 07:06:27 2015 +0000
+
+    add cancancan and rails_admin gem , start to add frontend template
+
+[33mcommit ed29c200255125678961ceb1c39ca427a5fa10a8[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Thu Jul 31 09:26:37 2014 +0000
+
+    fix n+1 query in cart index view page
+
+[33mcommit c556161431e16e2112bfcd9bff443f1b5a8d6da7[m
+Author: dangjlin <yettie.lin@gmail.com>
+Date:   Wed Jul 2 13:43:15 2014 +0000
+
+     nothing
+
+[33mcommit 9afef36ccace5ce02e386e8a20ef3e99d78d1708[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Sat Jun 28 21:12:12 2014 +0800
+
+    install ransack & implement search
+
+[33mcommit ef0e5167ea9dc5806db9e5be5ef7990f4a6d0270[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Sat Jun 28 20:58:21 2014 +0800
+
+    extract to stripe charger service
+
+[33mcommit 7f093a7a2b93bc4be5e03bf9423250eb77773a53[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Sat Jun 28 20:42:27 2014 +0800
+
+    install mailgun
+    replace password with setting
+
+[33mcommit aa3649c46b52eb741fc10ea61fd184194510922f[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Sat Jun 28 20:36:56 2014 +0800
+
+    extract stripe key to settings logic
+
+[33mcommit 47ee46695c48c164ff572fcbd0404b0cc99cef83[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Sat Jun 28 20:33:24 2014 +0800
+
+    install setting logic
+
+[33mcommit e41a61f0031d6c6c87021b770f694d04e170c480[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 23 05:58:36 2014 +0800
+
+    extract token
+
+[33mcommit 2150e2d26f0c599f9830381202ad5e1412070af9[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 23 05:58:27 2014 +0800
+
+    service objects
+
+[33mcommit 466b986db222d87a5178c0f3f70732c52d30eb1e[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 23 04:09:55 2014 +0800
+
+    use mailgun smtp
+
+[33mcommit e5fb9d224c52194275cb62836194ad985473f46b[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 23 03:56:08 2014 +0800
+
+    implement stripe real checkout
+
+[33mcommit fff65d0f07fee1ae5fc5c84e8184b0078f113126[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 23 03:32:12 2014 +0800
+
+    製作 credit card payment page
+
+[33mcommit f9f4c49bf616e06d433cb8dda4f9c54e88a967d1[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:57:01 2014 +0800
+
+      ✔ 身為管理者，我可以在後台對單張訂單做狀態改變 @done (14-06-20 01:56)
+         ✔ admin 的 order 列表應要能顯示訂單狀態 @done (14-06-20 01:56)
+
+[33mcommit 95378f49d4f17cb4c6cc0d7e1e4da6c44367d47d[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:27:45 2014 +0800
+
+     ✔ 身為管理者，可以在後台看訂單，訂單狀態分為未結帳、已結帳、出貨中、已出貨、辦理退貨 @done (14-06-20 01:27)
+
+[33mcommit 8fe15e66b83c3feca7ad0756390bfce71cd23111[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:10:20 2014 +0800
+
+     ✔ 結賬後跳轉到 account/orders#index @done (14-06-20 01:10)
+
+[33mcommit 698f9ef2a35526f652030b94564aa85fa66cae55[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:08:42 2014 +0800
+
+     建立 account/orders  可以看到該使用者過去所有訂單
+
+[33mcommit 98b26a548f5ec001e93c6784bf6305c8b2d24bad[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:01:49 2014 +0800
+
+    ✔ 身為消費者，當我在結賬後，購物⾞應自動清空 @done (14-06-20 01:01)
+
+[33mcommit 972e7e917b659d4c9f9be91b2d3b90a974d804a5[m
+Merge: e5a67a1 dbe8b78
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Sat Jun 21 21:30:00 2014 +0800
+
+    fix all conflict
+
+[33mcommit dbe8b787b248cc5673a075193046d19014543cdf[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:57:01 2014 +0800
+
+      ✔ 身為管理者，我可以在後台對單張訂單做狀態改變 @done (14-06-20 01:56)
+         ✔ admin 的 order 列表應要能顯示訂單狀態 @done (14-06-20 01:56)
+
+[33mcommit a93e6d33f03bac3db0b4aa376d080f4fda873909[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:27:45 2014 +0800
+
+     ✔ 身為管理者，可以在後台看訂單，訂單狀態分為未結帳、已結帳、出貨中、已出貨、辦理退貨 @done (14-06-20 01:27)
+
+[33mcommit 1e49b1e72c16dc7c041a5641d112baac1ce8faab[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:10:20 2014 +0800
+
+     ✔ 結賬後跳轉到 account/orders#index @done (14-06-20 01:10)
+
+[33mcommit a8acd56e6fed85e20c1e72b43b2104497e9ffb15[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:08:42 2014 +0800
+
+     建立 account/orders  可以看到該使用者過去所有訂單
+
+[33mcommit 0bf630caf6654c2e8894ad902aadd3e5b5bfbb80[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 01:01:49 2014 +0800
+
+    ✔ 身為消費者，當我在結賬後，購物⾞應自動清空 @done (14-06-20 01:01)
+
+[33mcommit 6cd3e92c1c1b9fb1eaf3e17600365fa01159d6aa[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:57:06 2014 +0800
+
+    數量為 0 的貨物不能「購買」 @done (14-06-20 00:56)
+
+[33mcommit ca8ad312d6376f9ea0a979c6b0866167c7a91715[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:54:19 2014 +0800
+
+     ✔ 身為消費者，我可以從購物車內更新購買數量 @done (14-06-20 00:54)
+
+[33mcommit 1c8272a159cec41afcd650f757ebd96298dea4a0[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:44:22 2014 +0800
+
+    add quantity to cart_items
+
+[33mcommit 9cf6e9701a9d555e3486a5e234f3d7eb5bce0a29[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:41:16 2014 +0800
+
+     ✔ 身為消費者，我可以從購物車內刪掉某些物品 @done (14-06-20 00:41)
+
+[33mcommit 499a9b199db0a3d8e130f686fbb754f7cbc2026e[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:36:17 2014 +0800
+
+    ✔ 清空購物⾞ @done (14-06-20 00:36)
+
+[33mcommit 6f1154b12cc082d3022ccc751b1cd9208ad813ce[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 20 00:34:57 2014 +0800
+
+    add v2-#1 TODO
+
+[33mcommit 1582426e9b6f09891358c0e0b77ecb7e9a276b22[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 17:45:21 2014 +0800
+
+     ✔ 身為消費者，當我下單時，我的信箱要能收到一張下單確認信 @done (14-06-13 17:44)
+
+[33mcommit d792f501f8c5f5cbafc85b85672cc68a421c9a90[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 16:55:23 2014 +0800
+
+    make payment
+
+[33mcommit 5fe9f1885589f2ac95753bbfcfa16437bf65ea9c[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 15:03:20 2014 +0800
+
+    install aasm
+
+[33mcommit 8d43f8eadc20ee5bc5f90323219f1bf6d5d6c90b[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 14:49:02 2014 +0800
+
+     ✔ 身為消費者，當系統生成一張訂單後，我可以填寫寄送資訊，並且用信用卡結帳 @done (14-06-13 14:47)
+
+[33mcommit c8ed57fe935af695d7ce0ee6d9f7dad2d029f47d[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 13:23:07 2014 +0800
+
+    身為消費者，我要在前台能夠將多樣商品加到購物車，並生成一張訂單
+
+[33mcommit 6bf634b5cf2d23c76ca41ed79f0d22dc62538331[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 07:03:27 2014 +0800
+
+    cart sumaary
+
+[33mcommit 27bd831dd1a5562a0993cb89c3ab52b25c59c863[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 06:24:03 2014 +0800
+
+    add product to cart
+
+[33mcommit 19694b469f3e49839287177e28dfe01147397533[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 05:45:29 2014 +0800
+
+    Add cart / cart_item
+
+[33mcommit e65076d594c1da0768e9fae147ed38e9ff42a04d[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 05:43:35 2014 +0800
+
+    add cart nav
+    add cart button
+
+[33mcommit f03f3d206a60d73f3addbc4608136fda00c390e7[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 05:04:39 2014 +0800
+
+    add alert js
+
+[33mcommit 39ac28ee36b743417b9939cbddfefb0c945b52da[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 04:42:00 2014 +0800
+
+    store-v2 spec
+
+[33mcommit 6e16e1f67bc5d871bae1253002c1dd762be407fd[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 04:33:34 2014 +0800
+
+    add notice stickits
+
+[33mcommit fbcdd50f5b8e1fc032a9196cccbed505f03e9212[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 04:09:17 2014 +0800
+
+    refine show page
+
+[33mcommit 3bfdfd26280b30bfd9910efe2ef691a3e4eea229[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 03:40:21 2014 +0800
+
+    build product index
+
+[33mcommit 9d049ffe69d0126a812de5c05948a9da285abc6c[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 03:23:09 2014 +0800
+
+    * install carrierwave
+    * nested attributes
+    * nested form with strong paramets with carrierwave
+
+[33mcommit 631e094df1a37c8be6c0f8ca7ee4a8191bbeb9a0[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 02:46:42 2014 +0800
+
+    Render Edit
+
+[33mcommit dc21ff7c1c5e32e0adfd7c1283b3733e8ac2c315[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 02:39:31 2014 +0800
+
+    SimpleForm with Bootstrap
+
+[33mcommit 67f1576dff5f371a1efc994772d66eb9701790bc[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 02:14:26 2014 +0800
+
+    Refine with Product List with table
+
+[33mcommit 4b9d68925b59bc0f870ee523581508b485ef61b1[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Fri Jun 13 02:00:00 2014 +0800
+
+    Admin Should able to see admin panel link in dropdown menu
+
+[33mcommit e5a67a1922eaebd942c6f81c6f2da4528bad42fb[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Thu Jun 12 21:25:23 2014 +0800
+
+    modify index view
+
+[33mcommit e6295f3c28e275478676a1ab672ed3f16c607eb9[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Thu Jun 12 18:33:28 2014 +0800
+
+    * Bootstrap
+    * Bootstrap with devise : Login / Logout
+
+[33mcommit e13db1ad106644df414e6187cebb8199b8a44439[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Thu Jun 12 18:03:19 2014 +0800
+
+    add welcome page
+
+[33mcommit 350abeee2f7f7ca7a6c696dfa8bc8aabf75195f6[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Mon Jun 9 21:07:50 2014 +0800
+
+    add login function
+
+[33mcommit dcf2808056c98abb8a7e310bad03d3d37e61ebeb[m
+Author: Daniel K. Lin <yettie.lin@gmail.com>
+Date:   Mon Jun 9 20:25:14 2014 +0800
+
+    first commmit to create controller and model
+
+[33mcommit 158bb270b66b245650f912493e5a55b967f8643d[m
+Author: xdite <xuite.joke@gmai.com>
+Date:   Mon Jun 9 18:48:14 2014 +0800
+
+    install bootstrap
+
+[33mcommit e63fa0236d7c2c625287c9c43ad1389c7c2c4508[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:49:50 2014 +0800
+
+    add signin/signout
+
+[33mcommit 6539e53192fdf49dbe40b413d7ff417b32133643[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:39:24 2014 +0800
+
+    add admin_user
+
+[33mcommit b7a3ed5fe6d874becf5b56916741d9cb78529098[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:30:59 2014 +0800
+
+    install devise
+
+[33mcommit 540c4101c43aaa0c048c86aab7f9dfdb9ce6605f[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:22:02 2014 +0800
+
+    add admin_products_index
+
+[33mcommit 677a5e680dd6502d8ea481c14e687b4e2793912a[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:19:48 2014 +0800
+
+    add product new
+
+[33mcommit 15b01765ef2f23f3803ea2fb8703c4db44c2f8aa[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:09:40 2014 +0800
+
+    Add product
+
+[33mcommit fc0d6928a8174dd3623c0cd7c3fcce8a40e8ec56[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 16:01:53 2014 +0800
+
+    admin namespace & route
+
+[33mcommit a537b11c339c4474aac06fabb92422b0bc56520e[m
+Author: xdite <xuite.joke@gmail.com>
+Date:   Mon Jun 9 15:49:06 2014 +0800
+
+    artstore

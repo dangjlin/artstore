@@ -6,9 +6,9 @@ namespace :FEMG do
   end
  
   desc "SEPgo to lookup data from FEMG website"
-  task :get_FEMG_data_sep do
+  task :get_FEMG_data_c9 do
   # the ruby file's path is in the project root, the file should be placed in there
-  ruby "lookFEMG-Sep.rb"
+  ruby "lookFEMG-C9.rb"
   end
 
   desc "AUGgo to lookup data from FEMG website"

@@ -7,11 +7,8 @@
 		
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
-  :adapter  => 'postgresql',
-  :username => ENV['DATABASE_USER'],
-  :password => ENV['DATABASE_PASS'],
-  :host => 'ec2-54-83-53-120.compute-1.amazonaws.com',
-  :database => 'ddcfd3vgulumtn'
+  :adapter  => 'sqlite3',
+  :database => 'db/development.sqlite3'
 )
 
 class Consult < ActiveRecord::Base
@@ -93,14 +90,14 @@ end
 	
 		
 		#心臟內科
-		cv_room = ["F101", "F102", "F103", "F104", "F105", "F106", "F109", "F112", "H119"] 
+		cv_room = ["F101", "F102", "F103", "F104", "F105", "F106", "F109", "F112","H119"] 
 		
 		# 心臟外科
 		cs_room = ["F112"]
 		#新陳代謝科
 		meta_room = ["G222" , "G223", "G224", "G234"]
 		#神經內科
-		neuro_room = ["F201", "F202", "F203", "F204", "F220", "F221", "G230""G234"] 		
+		neuro_room = ["F201", "F202", "F203", "F204", "F220", "F221", "G230","G234"] 		
 		#腎臟科
 		kn_room = ["G232", "G233", "H123", "2012"]
 		#家醫科

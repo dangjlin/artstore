@@ -9,7 +9,7 @@
   set :output, { error: 'log/cron_error.log' }
   
   every 1.day, :at => '03:00 pm' do 
-      rake "FEMG:get_FEMG_data"
+      rake "FEMG:get_FEMG_data_c9"
   end
   
   every 1.day, :at => '00:05 am' do

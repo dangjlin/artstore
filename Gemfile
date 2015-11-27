@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
+# environment variable 
+gem 'dotenv-rails', :groups => [:development, :test, :production]
+
 gem "devise"
 gem 'cancancan'
 gem 'rolify'
@@ -53,10 +56,6 @@ gem 'whenever'
 
 #app server 
 gem 'puma'
-
-# environment variable 
-gem 'dotenv-rails', :groups => [:development, :test, :production]
-
 
 group :development do 
 # Use sqlite3 as the database for Active Record

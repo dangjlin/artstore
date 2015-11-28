@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   
   
   namespace :femh do
+   # get ':id', to: 'consults#show'
     resources :consults do
     get ':id', to: 'consults#show'
     end

@@ -7,8 +7,8 @@
 
 ActiveRecord::Base.logger = Logger.new(File.open('log/database.log', 'w'))
 ActiveRecord::Base.establish_connection(
-   :adapter  => 'sqlite3',
-  :database => 'db/development.sqlite3'
+	:adapter  => 'sqlite3',
+	:database => 'db/development.sqlite3'
 )
 
 

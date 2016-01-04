@@ -18,7 +18,7 @@ namespace :FEMG do
   end
 
   desc "Novgo to lookup data from FEMG website"
-  task :get_FEMG_data_nov-c9 do
+  task :get_FEMG_data_nov_c9 do
   # the ruby file's path is in the project root, the file should be placed in there
   ruby "lookFEMG-Nov-C9.rb"
   end

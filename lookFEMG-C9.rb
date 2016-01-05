@@ -116,7 +116,7 @@ end
 		puts "=====lookup_result====="
 =end		
 		
-    today_date = "104"+Date.today.strftime("%m%d")
+    today_date = "105"+Date.today.strftime("%m%d")
   # today_date = "1041008"
      
 	puts "====CV上午診===="

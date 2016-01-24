@@ -104,8 +104,8 @@ end
 		fm_room = ["F107", "F108", "F109", "F110", "F111", "2012"]
 		
 		
-		year_month = "10411"
-	  	month_day = ["26"]		
+		year_month = "10501"
+	  	month_day = ["05"]		
 	#	year_month = "10410"
 	#	month_day = ["17"]
 	

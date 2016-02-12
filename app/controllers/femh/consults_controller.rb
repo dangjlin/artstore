@@ -22,7 +22,7 @@ class Femh::ConsultsController < AdminController
         #@month_start = "2015-"+"#{@month_string}"+"-01" 
         #@month_end = "2015-"+"#{@month_string}"+"-"+"#{@days}"
 
-        @days = Time.days_in_month(month.to_i,year).to_s
+        @days = Time.days_in_month(month.to_i,year.to_i).to_s
         @month_start = "#{year}-"+"#{month}"+"-01" 
         @month_end = "#{year}-"+"#{month}"+"-"+"#{@days}"
 
